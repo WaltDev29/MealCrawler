@@ -4,7 +4,8 @@ from datetime import datetime
 
 if not os.path.exists("menus.xlsx"):
     print("파일이 존재하지 않습니다.")
-    input("아무 키나 눌러 종료\n")
+    print("크롤링을 먼저 진행해주세요\n")
+    input("아무 키나 눌러 종료")
     exit()
 
 file = pd.read_excel("menus.xlsx")
