@@ -2,6 +2,8 @@ import os
 import pandas as pd
 from datetime import datetime
 
+pd.set_option("display.max_colwidth", None)
+
 if not os.path.exists("menus.xlsx"):
     print("파일이 존재하지 않습니다.")
     print("크롤링을 먼저 진행해주세요\n")
