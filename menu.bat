@@ -1,4 +1,4 @@
 @echo off
-cd /d D:\MealCrawler
-C:\Windows\py.exe "D:\MealCrawler\readMenus.py"
+cd /d D:\Project\MealCrawler
+C:\Windows\py.exe "D:\Project\MealCrawler\readMenus.py"
 pause
