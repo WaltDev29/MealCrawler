@@ -23,7 +23,7 @@ if not file["날짜"].str.contains(today).any():
 todayMenus = file[file["날짜"].str.contains(today, na=False)]
 print(f"=== 오늘의 학식 ===")
 print(todayMenus["날짜"].to_string(index=False), todayMenus["요일"].to_string(index=False), end='\n\n')
-print(f"--- 조식 ---\n{todayMenus["조식"].to_string(index=False)}\n")
-print(f"--- 중식 ---\n{todayMenus["중식"].to_string(index=False)}\n")
-print(f"--- 석식 ---\n{todayMenus["석식"].to_string(index=False)}\n")
+print(f"--- 조식 ---\n{todayMenus['조식'].to_string(index=False)}\n")
+print(f"--- 중식 ---\n{todayMenus['중식'].to_string(index=False)}\n")
+print(f"--- 석식 ---\n{todayMenus['석식'].to_string(index=False)}\n")
 input("아무 키나 눌러 종료")
